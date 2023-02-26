@@ -22,12 +22,11 @@ def load_dataset(dataset: str, batch_size:int, transform):
 
 
 # Define the training function
-def train(model, train_loader, num_epochs, learning_rate):
+def train(model, train_loader, num_epochs, optimizer, learning_rate):
 	# Choose the device where to train the model
 	device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 	# Chooe the optimizer to train the model 
-	optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 	mean_loss = list()
 
 	for epoch in range(num_epochs):

@@ -6,9 +6,8 @@ defaults:
 
 
 batch_size: 4
-learning_rate: 0.001
+learning_rate: 2.5e-4
 num_epochs: 30
 dataset: MNIST
-save_path: '/home/christian/Desktop/XYLab/Compression-project/model/'
-save_dir: '/home/christian/Desktop/XYLab/Compression-project/recompressed/'
+save_path: './save_images/'
 train: True
